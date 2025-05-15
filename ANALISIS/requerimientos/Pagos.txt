@@ -1,0 +1,8 @@
+*Pago de registrador:
+El sistema debe permitir a los usuarios realizar un pago por el total del carrito utilizando información simulada (por ejemplo, número de tarjeta de crédito).
+El pago debe ser procesado de forma simulada y mostrar un mensaje de éxito o error.
+
+*Ver historial de pagos:
+El sistema debe permitir a los usuarios ver un historial de pagos realizados, incluyendo la fecha y monto de cada pago.
+El historial debe ser accesible solo para los usuarios que hayan realizado pagos.
+

@@ -1,0 +1,15 @@
+*Crear categoría/subcategoría:
+El sistema debe permitir a los administradores crear nuevas categorías y subcategorías para organizar los productos.
+Las categorías y subcategorías deben tener un nombre único y ser de fácil acceso para los usuarios.
+
+*Listar categorías y subcategorías:
+El sistema debe permitir ver todas las categorías y subcategorías disponibles.
+Los usuarios deben poder navegar a través de las categorías para encontrar productos relacionados.
+
+*Actualizar nombre o estado de categoría/subcategoría:
+El sistema debe permitir actualizar el nombre o estado (activo/inactivo) de una categoría o subcategoría.
+Solo los administradores deben tener acceso a esta función.
+
+*Eliminar (o desactivar) categoría/subcategoría:
+El sistema debe permitir eliminar o desactivar una categoría o subcategoría del sistema.
+Los productos asociados a una categoría eliminada deben ser reubicados o eliminados según la configuración.

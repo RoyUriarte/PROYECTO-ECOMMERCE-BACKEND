@@ -1,0 +1,20 @@
+*Agregar producto al carrito:
+El sistema debe permitir a los usuarios agregar productos al carrito de compras especificando la cantidad deseada.
+Si el producto ya está en el carrito, la cantidad debe ser actualizada en lugar de agregarlo nuevamente.
+
+*Ver carrito actual:
+El sistema debe permitir a los usuarios ver el contenido del carrito, incluyendo los productos, cantidades y precios.
+Los usuarios deben poder ver el total acumulado en el carrito.
+
+*Actualizar cantidad de productos en el carrito:
+El sistema debe permitir a los usuarios modificar la cantidad de productos en el carrito antes de realizar el pago.
+Si un usuario intenta añadir más productos de los disponibles en stock, el sistema debe mostrar un mensaje de advertencia.
+
+*Quitar productos del carrito:
+El sistema debe permitir a los usuarios eliminar productos del carrito de compras.
+El total debe actualizarse en tiempo real al quitar un producto.
+
+*Calcular total:
+El sistema debe calcular el total del carrito, que incluye el subtotal (precio de los productos * cantidad) y los descuentos aplicables (si existen).
+El total debe mostrar la cantidad total a pagar, considerando cualquier descuento aplicado.
+

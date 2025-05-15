@@ -1,0 +1,192 @@
+Caso 1: Crear usuario (registro)
+
+*Lógica:
+¿Qué necesito?: Nombre, apellido, correo, contraseña, tipo de usuario.
+¿Qué voy a hacer?: Crear un nuevo usuario en la base de datos.
+¿Qué debo mostrar?: Confirmación de que el usuario ha sido creado exitosamente.
+
+*Algoritmo:
+Leer el nombre, apellido, correo, contraseña y tipo de usuario (cliente o admin).
+Validar que los campos no estén vacíos.
+Crear el usuario en la base de datos.
+Mostrar un mensaje de éxito.
+
+*Pseudocódigo en PSeint:
+Algoritmo CrearUsuario
+    Definir nombre, apellido, correo, contraseña, tipoUsuario Como Texto
+
+    Escribir "Ingrese su nombre:"
+    Leer nombre
+
+    Escribir "Ingrese su apellido:"
+    Leer apellido
+
+    Escribir "Ingrese su correo:"
+    Leer correo
+
+    Escribir "Ingrese su contraseña:"
+    Leer contraseña
+
+    Escribir "Ingrese el tipo de usuario (cliente/admin):"
+    Leer tipoUsuario
+
+    // Validar que los campos no estén vacíos
+    Si nombre = "" O apellido = "" O correo = "" O contraseña = "" O tipoUsuario = "" Entonces
+        Escribir "Error: Todos los campos son obligatorios."
+    Sino
+        // Simular creación del usuario
+        Escribir "Usuario creado exitosamente:"
+        Escribir "Nombre completo: ", nombre, " ", apellido
+        Escribir "Correo: ", correo
+        Escribir "Tipo de usuario: ", tipoUsuario
+    FinSi
+FinAlgoritmo
+
+
+
+Caso 2: Leer perfil de usuario
+*Lógica:
+¿Qué necesito?: Identificador del usuario (ID).
+¿Qué voy a hacer?: Leer los datos del perfil del usuario desde la base de datos.
+¿Qué debo mostrar?: El nombre, correo y tipo de usuario del perfil.
+
+*Algoritmo:
+Obtener el ID del usuario.
+Buscar el perfil en la base de datos utilizando el ID.
+Mostrar los datos del usuario (nombre, correo, tipo de usuario).
+
+*Pseudocódigo en PSeint:
+Algoritmo LeerPerfilUsuario
+    Definir idUsuario Como Entero
+
+    Escribir "Ingrese su ID de usuario:"
+    Leer idUsuario
+
+    // Simular búsqueda de perfil
+    Si idUsuario = 1 Entonces
+        Escribir "Nombre: Juan Pérez"
+        Escribir "Correo: juan@example.com"
+        Escribir "Tipo de usuario: Administrador"
+    Sino
+        Si idUsuario = 2 Entonces
+            Escribir "Nombre: Ana Gómez"
+            Escribir "Correo: ana@example.com"
+            Escribir "Tipo de usuario: Usuario"
+        Sino
+            Escribir "Usuario no encontrado"
+        FinSi
+    FinSi
+FinAlgoritmo
+
+
+Caso 3: Actualizar datos del usuario
+*Lógica:
+¿Qué necesito?: ID del usuario, nuevos datos (nombre, apellido, correo, contraseña).
+¿Qué voy a hacer?: Actualizar los datos del usuario en la base de datos.
+¿Qué debo mostrar?: Confirmación de que los datos se actualizaron correctamente.
+
+*Algoritmo:
+Leer el ID del usuario.
+Leer los nuevos datos del usuario (nombre, correo, etc.).
+Validar que los campos no estén vacíos.
+Actualizar la base de datos con los nuevos datos.
+Mostrar confirmación de actualización exitosa.
+
+*Pseudocódigo en PSeint:
+Algoritmo ActualizarDatosUsuario
+    Definir idUsuario, nombre, apellido, correo, contraseña Como Texto
+	
+	Repetir
+		Escribir "Ingrese su ID de usuario:"
+		Leer idUsuario
+	Hasta Que idUsuario <> ""
+	
+    Escribir "Ingrese el nuevo nombre:"
+    Leer nombre
+	
+    Escribir "Ingrese el nuevo apellido:"
+    Leer apellido
+	
+    Escribir "Ingrese el nuevo correo:"
+    Leer correo
+	
+    Escribir "Ingrese la nueva contraseña:"
+    Leer contraseña
+	
+    // Validar que no haya campos vacíos
+    Si nombre = "" O apellido = "" O correo = "" O contraseña = "" Entonces
+        Escribir "Todos los campos son obligatorios"
+    Sino
+        Escribir "Datos de usuario actualizados exitosamente"
+    FinSi
+FinAlgoritmo
+
+
+Caso 4: Eliminar usuario (opcional o desactivación)
+
+*Lógica:
+¿Qué necesito?: ID del usuario.
+¿Qué voy a hacer?: Eliminar o desactivar el usuario en la base de datos.
+¿Qué debo mostrar?: Confirmación de eliminación o desactivación exitosa.
+
+*Algoritmo:
+Leer el ID del usuario.
+Verificar si el usuario existe.
+Eliminar o desactivar el usuario.
+Mostrar un mensaje de éxito.
+
+*Pseudocódigo en PSeint:
+Algoritmo EliminarUsuario
+    Definir idUsuario Como Entero
+
+    Escribir "Ingrese el ID del usuario a eliminar:"
+    Leer idUsuario
+
+    // Simulación de usuarios existentes
+    Si idUsuario = 1 Entonces
+        Escribir "Usuario 'Juan Pérez' desactivado exitosamente."
+    Sino
+        Si idUsuario = 2 Entonces
+            Escribir "Usuario 'Ana Gómez' desactivado exitosamente."
+        Sino
+            Escribir "Usuario no encontrado."
+        FinSi
+    FinSi
+FinAlgoritmo
+
+
+Caso 5: Iniciar sesión (autenticación con JWT o sesión)
+
+*Lógica:
+¿Qué necesito?: Correo y contraseña.
+¿Qué voy a hacer?: Verificar si las credenciales son correctas y generar un JWT o iniciar sesión con sesión de usuario.
+¿Qué debo mostrar?: Confirmación de inicio de sesión exitoso y el token de autenticación.
+
+*Algoritmo:
+Leer el correo y la contraseña del usuario.
+Verificar si las credenciales son correctas.
+Si son correctas, generar un JWT.
+Mostrar el token de autenticación.
+
+*Pseudocódigo en PSeint:
+Algoritmo IniciarSesion
+    Definir correo, contraseña Como Texto
+    Definir token Como Texto
+
+    Escribir "Ingrese su correo:"
+    Leer correo
+
+    Escribir "Ingrese su contraseña:"
+    Leer contraseña
+
+    // Simular verificación de credenciales
+    Si correo = "usuario@example.com" Y contraseña = "1234" Entonces
+        // Simular generación de token
+        token <- "abc123xyzTOKEN"  // Token ficticio
+        Escribir "Inicio de sesión exitoso"
+        Escribir "Su token de autenticación es: ", token
+    Sino
+        Escribir "Correo o contraseña incorrectos"
+    FinSi
+FinAlgoritmo
+

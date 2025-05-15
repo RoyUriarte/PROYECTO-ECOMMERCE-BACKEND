@@ -1,0 +1,162 @@
+Caso 1: Crear producto
+*Lógica:
+¿Qué necesito?: Nombre, descripción, precio, cantidad en stock, imagen del producto.
+¿Qué voy a hacer?: Crear un producto nuevo.
+¿Qué debo mostrar?: Confirmación de creación del producto.
+
+*Algoritmo:
+Leer los datos del producto (nombre, descripción, precio, cantidad, imagen).
+Crear el producto con los datos proporcionados.
+Mostrar un mensaje de confirmación.
+
+*Pseudocódigo en PSeint:
+Algoritmo CrearProducto
+    Definir nombre, descripcion, imagen Como Texto
+    Definir precio, cantidad Como Real
+    
+    Escribir "Ingrese el nombre del producto:"
+    Leer nombre
+    
+    Escribir "Ingrese la descripción del producto:"
+    Leer descripcion
+    
+    Escribir "Ingrese el precio del producto:"
+    Leer precio
+    
+    Escribir "Ingrese la cantidad de productos en stock:"
+    Leer cantidad
+    
+    Escribir "Seleccione la imagen del producto (nombre de archivo):"
+    Leer imagen
+    
+    // Simulación de creación del producto
+    Escribir "Producto ", nombre, " creado exitosamente con un precio de ", precio, " y ", cantidad, " unidades en stock."
+FinAlgoritmo
+
+
+Caso 2: Listar productos
+*Lógica:
+¿Qué necesito?: Una lista de productos.
+¿Qué voy a hacer?: Listar los productos disponibles.
+¿Qué debo mostrar?: El nombre, precio y cantidad de los productos.
+
+*Algoritmo:
+Definir una lista de productos.
+Iterar sobre la lista y mostrar los productos.
+
+*Pseudocódigo en PSeInt:
+Algoritmo ListarProductos
+    Definir productos Como Cadena
+    Definir precio, cantidad Como Real
+    Definir i Como Entero
+    
+    // Simulación de productos en un arreglo
+    productos <- "Celular, Tablet, Laptop"
+    precio <- 500
+    cantidad <- 20
+    
+    Escribir "Lista de productos disponibles:"
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "Producto ", productos[i], ", Precio: ", precio, ", Stock: ", cantidad
+    FinPara
+FinAlgoritmo
+
+
+Caso 3: Ver detalle de un producto
+
+*Lógica:
+¿Qué necesito?: El nombre del producto.
+¿Qué voy a hacer?: Mostrar el detalle del producto solicitado.
+¿Qué debo mostrar?: Nombre, descripción, precio y cantidad del producto.
+
+*Algoritmo:
+Leer el nombre del producto.
+Simular que se busca el producto y se muestra su detalle.
+
+*Pseudocódigo en PSeInt:
+Algoritmo VerDetalleProducto
+    Definir nombreProducto, descripcionProducto Como Texto
+    Definir precio, cantidad Como Real
+    
+    Escribir "Ingrese el nombre del producto:"
+    Leer nombreProducto
+    
+    // Simulación de búsqueda del producto
+    Si nombreProducto = "Celular" Entonces
+        descripcionProducto <- "Pantalla táctil, 128GB de almacenamiento"
+        precio <- 500
+        cantidad <- 20
+    Sino
+        descripcionProducto <- "Producto no encontrado"
+        precio <- 0
+        cantidad <- 0
+    FinSi
+    
+    Escribir "Detalle del producto: "
+    Escribir "Nombre: ", nombreProducto
+    Escribir "Descripción: ", descripcionProducto
+    Escribir "Precio: ", precio
+    Escribir "Cantidad en stock: ", cantidad
+FinAlgoritmo
+
+
+Caso 4: Actualizar información del producto
+*Lógica:
+¿Qué necesito?: Nombre del producto, nuevos datos (precio, cantidad).
+¿Qué voy a hacer?: Actualizar la información del producto.
+¿Qué debo mostrar?: Confirmación de la actualización del producto.
+
+*Algoritmo:
+Leer el nombre del producto.
+Leer los nuevos datos (precio, cantidad).
+Mostrar un mensaje de confirmación de la actualización.
+
+*Pseudocódigo en PSeInt:
+Algoritmo ActualizarProducto
+    Definir nombreProducto, descripcionProducto Como Texto
+    Definir nuevoPrecio, nuevaCantidad Como Real
+    
+    Escribir "Ingrese el nombre del producto a actualizar:"
+    Leer nombreProducto
+    
+    Escribir "Ingrese el nuevo precio del producto:"
+    Leer nuevoPrecio
+    
+    Escribir "Ingrese la nueva cantidad del producto:"
+    Leer nuevaCantidad
+    
+    // Simulación de actualización
+    Si nombreProducto = "Celular" Entonces
+        descripcionProducto <- "Pantalla táctil, 128GB de almacenamiento"
+        Escribir "Producto ", nombreProducto, " actualizado exitosamente con el precio de ", nuevoPrecio, " y ", nuevaCantidad, " unidades en stock."
+    Sino
+        Escribir "Producto no encontrado"
+    FinSi
+FinAlgoritmo
+
+
+Caso 5: Eliminar producto (o marcar como inactivo)
+*Lógica:
+¿Qué necesito?: Nombre del producto.
+¿Qué voy a hacer?: Eliminar o desactivar un producto.
+¿Qué debo mostrar?: Confirmación de eliminación o desactivación.
+
+*Algoritmo:
+Leer el nombre del producto.
+Simular la eliminación o desactivación del producto.
+Mostrar un mensaje de confirmación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo EliminarProducto
+    Definir nombreProducto Como Texto
+    
+    Escribir "Ingrese el nombre del producto a eliminar:"
+    Leer nombreProducto
+    
+    // Simulación de eliminación
+    Si nombreProducto = "Celular" Entonces
+        Escribir "Producto ", nombreProducto, " eliminado exitosamente"
+    Sino
+        Escribir "Producto no encontrado"
+    FinSi
+FinAlgoritmo

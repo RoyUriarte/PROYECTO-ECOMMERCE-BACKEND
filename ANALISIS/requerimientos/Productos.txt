@@ -1,0 +1,20 @@
+*Crear producto:
+El sistema debe permitir a los administradores agregar nuevos productos, incluyendo el nombre, descripción, precio, cantidad en stock y una imagen del producto.
+El sistema debe validar que todos los campos estén completos antes de agregar el producto.
+
+*Listar productos:
+El sistema debe permitir listar los productos disponibles en el eCommerce.
+Los productos deben ser listados con su nombre, precio y cantidad disponible.
+Debe ser posible listar los productos por categoría o realizar una búsqueda por nombre.
+
+*Ver detalle del producto:
+El sistema debe permitir a los usuarios ver el detalle de un producto, mostrando su nombre, descripción, precio y cantidad en stock.
+El sistema debe permitir ver una imagen del producto.
+
+*Actualizar producto:
+El sistema debe permitir a los administradores actualizar la información de un producto, como el nombre, descripción, precio y cantidad en stock.
+El sistema debe permitir cambiar la imagen del producto si es necesario.
+
+*Eliminar producto (o marcar como inactivo):
+El sistema debe permitir a los administradores eliminar productos del catálogo.
+Alternativamente, los productos pueden ser marcados como inactivos sin ser eliminados de la base de datos.

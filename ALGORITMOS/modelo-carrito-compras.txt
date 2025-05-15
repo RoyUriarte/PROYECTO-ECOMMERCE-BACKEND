@@ -1,0 +1,157 @@
+Caso 1: Agregar producto al carrito
+*Lógica:
+¿Qué necesito?: Producto, cantidad del producto.
+¿Qué voy a hacer?: Agregar el producto al carrito con la cantidad indicada.
+¿Qué debo mostrar?: Confirmación de que el producto fue agregado al carrito.
+
+*Algoritmo:
+Leer el producto y la cantidad.
+Verificar si el producto ya está en el carrito.
+Si el producto no está, agregarlo al carrito. Si está, actualizar la cantidad.
+Mostrar el mensaje de confirmación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo AgregarProductoAlCarrito
+    Definir nombreProducto Como Texto
+    Definir cantidad, i Como Entero
+    Definir carrito Como Cadena
+
+    Escribir "Ingrese el nombre del producto a agregar al carrito:"
+    Leer nombreProducto
+    
+    Escribir "Ingrese la cantidad de ", nombreProducto, " a agregar:"
+    Leer cantidad
+    
+    // Simulación de carrito
+    carrito <- "Laptop, Celular, Tablet"
+    
+    // Simulación de agregar producto al carrito
+    Si nombreProducto = "Laptop" Entonces
+        Escribir "Producto '", nombreProducto, "' agregado al carrito con ", cantidad, " unidad(es)."
+    Sino
+        Escribir "Producto no disponible para agregar al carrito."
+    FinSi
+FinAlgoritmo
+
+
+Caso 2: Ver carrito actual (por usuario)
+*Lógica:
+¿Qué necesito?: Una lista de productos en el carrito.
+¿Qué voy a hacer?: Mostrar los productos y sus cantidades en el carrito.
+¿Qué debo mostrar?: Los productos que están en el carrito con su cantidad.
+
+*Algoritmo:
+Definir una lista de productos y sus cantidades en el carrito.
+Iterar sobre la lista y mostrar los productos y sus cantidades.
+
+*Pseudocódigo en PSeInt:
+Algoritmo VerCarrito
+    Definir carrito Como Cadena
+    Definir cantidades Como Cadena
+    Definir i Como Entero
+    
+    // Simulación de productos en carrito
+    carrito <- "Laptop, Celular, Tablet"
+    cantidades <- "1, 2, 1"
+    
+    Escribir "Productos en el carrito:"
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "Producto: ", carrito[i], ", Cantidad: ", cantidades[i]
+    FinPara
+FinAlgoritmo
+
+
+Caso 3: Actualizar cantidad de productos
+*Lógica:
+¿Qué necesito?: Producto, nueva cantidad.
+¿Qué voy a hacer?: Actualizar la cantidad del producto en el carrito.
+¿Qué debo mostrar?: Confirmación de que la cantidad ha sido actualizada.
+
+*Algoritmo:
+Leer el nombre del producto y la nueva cantidad.
+Verificar si el producto está en el carrito.
+Si está, actualizar la cantidad.
+Mostrar el mensaje de confirmación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo ActualizarCantidadCarrito
+    Definir nombreProducto Como Texto
+    Definir nuevaCantidad Como Entero
+    Definir i Como Entero
+    
+    Escribir "Ingrese el nombre del producto a actualizar:"
+    Leer nombreProducto
+    
+    Escribir "Ingrese la nueva cantidad de ", nombreProducto, ":"
+    Leer nuevaCantidad
+    
+    // Simulación de carrito
+    Si nombreProducto = "Laptop" Entonces
+        Escribir "La cantidad de ", nombreProducto, " ha sido actualizada a ", nuevaCantidad, " unidad(es)."
+    Sino
+        Escribir "Producto no encontrado en el carrito."
+    FinSi
+FinAlgoritmo
+
+Caso 4: Quitar productos del carrito
+*Lógica:
+¿Qué necesito?: Nombre del producto.
+¿Qué voy a hacer?: Eliminar el producto del carrito.
+¿Qué debo mostrar?: Confirmación de que el producto fue eliminado.
+
+*Algoritmo:
+Leer el nombre del producto a eliminar.
+Verificar si el producto está en el carrito.
+Si está, eliminarlo.
+Mostrar un mensaje de confirmación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo QuitarProductoDelCarrito
+    Definir nombreProducto Como Texto
+    
+    Escribir "Ingrese el nombre del producto a quitar del carrito:"
+    Leer nombreProducto
+    
+    // Simulación de carrito
+    Si nombreProducto = "Laptop" Entonces
+        Escribir "Producto '", nombreProducto, "' eliminado del carrito."
+    Sino
+        Escribir "Producto no encontrado en el carrito."
+    FinSi
+FinAlgoritmo
+
+Caso 5: Calcular total (subtotal + descuentos)
+*Lógica:
+¿Qué necesito?: Precio de los productos, cantidad de cada uno, y los posibles descuentos.
+¿Qué voy a hacer?: Calcular el subtotal (precio * cantidad) y aplicar el descuento.
+¿Qué debo mostrar?: El total final con los descuentos aplicados.
+
+*Algoritmo:
+Leer el precio y cantidad de cada producto en el carrito.
+Calcular el subtotal (precio * cantidad).
+Aplicar el descuento si corresponde.
+Mostrar el total final.
+
+*Pseudocódigo en PSeInt:
+Algoritmo CalcularTotalCarrito
+    Definir precio, cantidad, subtotal, descuento, total Como Real
+    
+    Escribir "Ingrese el precio del producto:"
+    Leer precio
+    
+    Escribir "Ingrese la cantidad del producto:"
+    Leer cantidad
+    
+    Escribir "Ingrese el porcentaje de descuento (en porcentaje, por ejemplo 10 para 10%):"
+    Leer descuento
+    
+    // Calcular subtotal
+    subtotal <- precio * cantidad
+    
+    // Aplicar descuento
+    total <- subtotal - (subtotal * (descuento / 100))
+    
+    Escribir "Subtotal: ", subtotal
+    Escribir "Descuento aplicado: ", descuento, "%"
+    Escribir "Total con descuento: ", total
+FinAlgoritmos

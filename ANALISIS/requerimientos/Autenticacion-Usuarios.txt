@@ -1,0 +1,21 @@
+*Registrar usuario:
+El sistema debe permitir a un nuevo usuario registrarse proporcionando su nombre, apellido, correo electrónico, contraseña y tipo de usuario (cliente o administrador).
+Se debe validar que todos los campos estén completos antes de registrar al usuario.
+El usuario debe recibir una confirmación de su registro exitoso.
+
+*Iniciar sesión:
+El sistema debe permitir a los usuarios registrados iniciar sesión proporcionando su correo electrónico y contraseña.
+Si las credenciales son correctas, el sistema debe generar un token de autenticación (JWT) para el usuario.
+Si las credenciales son incorrectas, debe mostrar un mensaje de error.
+
+*Leer perfil de usuario:
+El sistema debe permitir a los usuarios ver su perfil, mostrando su nombre, correo y tipo de usuario.
+La vista del perfil debe ser accesible solo para usuarios autenticados.
+
+*Actualizar datos del usuario:
+El sistema debe permitir a los usuarios actualizar su información personal, como nombre, apellido, correo electrónico y contraseña.
+El usuario debe ser capaz de guardar los cambios con éxito y recibir una confirmación.
+
+*Eliminar usuario (opcional o desactivación):
+El sistema debe permitir a los usuarios eliminar o desactivar su cuenta.
+En caso de desactivación, el usuario aún debe ser capaz de iniciar sesión, pero su cuenta debe estar marcada como inactiva.

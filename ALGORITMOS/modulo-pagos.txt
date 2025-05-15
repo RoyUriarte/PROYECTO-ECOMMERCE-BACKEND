@@ -1,0 +1,59 @@
+Caso 1: Pago de registrador
+*Lógica:
+¿Qué necesito?: Monto a pagar y la información del pago (por ejemplo, un número de tarjeta de crédito).
+¿Qué voy a hacer?: Simular el proceso de pago.
+¿Qué debo mostrar?: Confirmación del pago o error en el proceso.
+
+*Algoritmo:
+Leer el monto a pagar.
+Leer la información de pago (por ejemplo, número de tarjeta).
+Simular un proceso de pago (suponiendo que siempre es exitoso).
+Mostrar el mensaje de éxito o error.
+
+*Pseudocódigo en PSeInt:
+Algoritmo PagoDeRegistrador
+    Definir monto, numeroTarjeta Como Real
+    Definir estadoPago Como Cadena
+
+    Escribir "Ingrese el monto a pagar:"
+    Leer monto
+    
+    Escribir "Ingrese el número de tarjeta:"
+    Leer numeroTarjeta
+    
+    // Simulación del proceso de pago
+    Si numeroTarjeta <> "" Y monto > 0 Entonces
+        estadoPago <- "Pago exitoso"
+        Escribir "El pago de S/", monto, " se ha procesado exitosamente."
+    Sino
+        estadoPago <- "Error en el pago"
+        Escribir "Pago fallido. Por favor, revise los datos."
+    FinSi
+FinAlgoritmo
+
+
+Caso 2: Ver historial de pagos
+*Lógica:
+¿Qué necesito?: Los pagos realizados (simulados, por ejemplo, una lista de montos y fechas).
+¿Qué voy a hacer?: Mostrar un historial de pagos realizados por el usuario.
+¿Qué debo mostrar?: El listado de pagos anteriores con sus montos y fechas.
+
+*Algoritmo:
+Definir un historial de pagos simulados (montos y fechas).
+Iterar sobre el historial y mostrar los pagos realizados.
+
+*Pseudocódigo en PSeInt:
+Algoritmo VerHistorialDePagos
+    Definir pagos Como Cadena
+    Definir fechas Como Cadena
+    Definir i Como Entero
+    
+    // Simulación de historial de pagos
+    pagos <- "50, 100, 200"
+    fechas <- "2023-05-01, 2023-05-05, 2023-05-10"
+    
+    Escribir "Historial de pagos realizados:"
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "Pago de S/", pagos[i], " realizado el ", fechas[i]
+    FinPara
+FinAlgoritmo

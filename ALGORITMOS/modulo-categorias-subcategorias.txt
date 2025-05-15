@@ -1,0 +1,108 @@
+Caso 1: Crear categoría
+*Lógica:
+¿Qué necesito?: Nombre de la categoría.
+¿Qué voy a hacer?: Crear una categoría para productos tecnológicos (por ejemplo, "Smartphones", "Laptops", etc.).
+¿Qué debo mostrar?: Confirmación de que la categoría ha sido creada correctamente.
+
+*Algoritmo:
+Leer el nombre de la categoría (por ejemplo, "Smartphones").
+Validar que el nombre no esté vacío.
+Simular la creación de la categoría en la tienda.
+Mostrar un mensaje de confirmación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo CrearCategoria
+    Definir nombreCategoria Como Texto
+    
+    Escribir "Ingrese el nombre de la categoría (Ejemplo: Smartphones, Laptops, Accesorios):"
+    Leer nombreCategoria
+    
+    Si nombreCategoria = "" Entonces
+        Escribir "El nombre de la categoría no puede estar vacío"
+    Sino
+        // Simulación de la creación de la categoría
+        Escribir "Categoría " + nombreCategoria + " creada exitosamente."
+    FinSi
+FinAlgoritmo
+
+
+Caso 2: Listar categorías (por ejemplo, 'Smartphones', 'Laptops', 'Accesorios')
+*Lógica:
+¿Qué necesito?: Una lista de categorías de productos tecnológicos.
+¿Qué voy a hacer?: Mostrar todas las categorías disponibles (ejemplo: Smartphones, Laptops, Accesorios).
+¿Qué debo mostrar?: El nombre de cada categoría.
+
+*Algoritmo:
+Definir una lista de categorías.
+Iterar sobre la lista y mostrar cada categoría.
+
+*Pseudocódigo en PSeInt:
+Algoritmo ListarCategorias
+    Definir categorias Como Cadena
+    Definir i Como Entero
+    
+    // Simulación de categorías de productos tecnológicos
+    categorias <- "Smartphones, Laptops, Accesorios"
+    
+    Escribir "Lista de Categorías disponibles:"
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "Categoría: ", categorias[i]
+    FinPara
+FinAlgoritmo
+
+
+Caso 3: Actualizar categoría
+*Lógica:
+¿Qué necesito?: El nombre de la categoría que se quiere actualizar y el nuevo nombre.
+¿Qué voy a hacer?: Actualizar el nombre de una categoría existente (por ejemplo, de "Smartphones" a "Smartphones y Accesorios").
+¿Qué debo mostrar?: Confirmación de que la categoría ha sido actualizada.
+
+*Algoritmo:
+Leer el nombre de la categoría a actualizar.
+Leer el nuevo nombre de la categoría.
+Validar que los nombres no estén vacíos.
+Mostrar un mensaje de confirmación de la actualización.
+
+*Pseudocódigo en PSeInt:
+Algoritmo ActualizarCategoria
+    Definir nombreAnterior, nuevoNombre Como Texto
+	
+    Escribir "Ingrese el nombre de la categoría a actualizar:"
+    Leer nombreAnterior
+    
+    Escribir "Ingrese el nuevo nombre para la categoría:"
+    Leer nuevoNombre
+    
+    Si nombreAnterior = "" O nuevoNombre = "" Entonces
+        Escribir "El nombre no puede estar vacío"
+    Sino
+        // Simulación de actualización de la categoría
+        Escribir "Categoría " + nombreAnterior + " actualizada exitosamente a " + nuevoNombre
+    FinSi
+FinAlgoritmo
+
+Caso 4: Eliminar categoría (o marcar como inactiva)
+*Lógica:
+¿Qué necesito?: Nombre de la categoría a eliminar o desactivar (por ejemplo, "Smartphones").
+¿Qué voy a hacer?: Eliminar o desactivar una categoría en la tienda (por ejemplo, "Smartphones").
+¿Qué debo mostrar?: Confirmación de la eliminación o desactivación de la categoría.
+
+*Algoritmo:
+Leer el nombre de la categoría a eliminar o desactivar.
+Simular la eliminación de la categoría.
+Mostrar un mensaje de confirmación de eliminación.
+
+*Pseudocódigo en PSeInt:
+Algoritmo EliminarCategoria
+    Definir nombreCategoria Como Texto
+
+    Escribir "Ingrese el nombre de la categoría a eliminar o desactivar:"
+    Leer nombreCategoria
+    
+    Si nombreCategoria = "" Entonces
+        Escribir "El nombre de la categoría no puede estar vacío"
+    Sino
+        // Simulación de eliminación o desactivación de la categoría
+        Escribir "Categoría " + nombreCategoria + " eliminada o desactivada exitosamente."
+    FinSi
+FinAlgoritmo
