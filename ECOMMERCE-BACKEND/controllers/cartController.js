@@ -7,7 +7,8 @@ const inventoryModel = require('../models/inventoryModel');
  */
 exports.createCart = async (req, res) => {
   try {
-    const { usuario_id } = req.body;
+    
+    const usuario_id = req.user.id;
     const cart = await Cart.createCart(usuario_id);
     res.status(201).json(cart);
   } catch (err) {

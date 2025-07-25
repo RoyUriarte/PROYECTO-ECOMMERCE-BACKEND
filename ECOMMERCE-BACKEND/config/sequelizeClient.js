@@ -18,4 +18,10 @@ const sequelize = new Sequelize(
   }
 );
 
+
+// Probar la conexión a la base de datos
+sequelize.authenticate()
+  .then(() => console.log("Conexión a PostgreSQL establecida con Sequelize."))
+  .catch(err => console.error("Error de conexión con Sequelize:", err));
+
 module.exports = sequelize;

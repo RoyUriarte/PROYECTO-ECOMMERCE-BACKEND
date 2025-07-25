@@ -68,7 +68,7 @@ exports.remove = async (req, res) => {
     if (!deletedCount) {
       return res.status(404).json({ message: 'Categoría no encontrada' });
     }
-    res.status(204).end();
+    res.status(200).json({ message: 'Categoría eliminada' });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }

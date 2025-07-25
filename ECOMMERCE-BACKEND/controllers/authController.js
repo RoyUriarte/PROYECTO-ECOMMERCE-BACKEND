@@ -8,7 +8,7 @@ const JWT_REFRESH_SECRET = process.env.JWT_REFRESH_SECRET || JWT_SECRET;
 const ACCESS_EXPIRES_IN = '15m';
 const REFRESH_EXPIRES_IN = '7d';
 
-// In-memory store for refresh tokens (for demo). In production, use DB or cache.
+
 let refreshTokens = [];
 /**
  * Registro de usuario

@@ -2,8 +2,6 @@
 require('dotenv').config();
 const express = require("express");
 
-// Conexión a la base de datos usando Sequelize
-const sequelize = require("./config/sequelizeClient.js");
 
 // Importar rutas
 const authRoutes       = require("./routes/authRoutes");
@@ -21,12 +19,8 @@ const PORT = process.env.PORT || 3000;
 // Middleware para procesar JSON
 app.use(express.json());
 
-// Probar la conexión a la base de datos
-sequelize.authenticate()
-  .then(() => console.log("Conexión a PostgreSQL establecida con Sequelize."))
-  .catch(err => console.error("Error de conexión con Sequelize:", err));
 
-// Opcional: sincronizar modelos con la base de datos
+
 // sequelize.sync();
 
 // Montar rutas

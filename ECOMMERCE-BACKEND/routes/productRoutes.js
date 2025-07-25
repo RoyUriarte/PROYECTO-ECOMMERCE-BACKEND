@@ -3,6 +3,7 @@ const router = express.Router();
 
 const productController = require('../controllers/productController');
 const { verifyToken, authorizeRoles } = require('../middlewares/authMiddleware');
+//const { authorizeRoles } = require("../middlewares/roleMiddleware");
 
 // Rutas públicas
 router.get('/', productController.list);
